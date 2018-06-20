@@ -65,29 +65,26 @@ a{
   flex-direction: column;
 }
 
-.project-one-two{
+.project1,.project2,.project3{
   display: flex;
+  width:33%;
   justify-content: space-between;
-  width:66%;
-  flex-direction: row;
-}
-.project-three{
-  width:34%;
+  flex-direction:column;
+  margin:1px 1px 20px 1px;
 }
 
-.work-imagess,.work-images{
-  width:90%;
-}
-.project1,.project2,.project3{
-  width: 100%;
-  margin:0px 0px 20px 0px;
+.work-images{
+  width:100%;
 }
 .work-container{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-flow: row wrap;
   text-align: center;
 }
+/* .work-container>*{
+  flex:1 33%;
+} */
+
 
 /* Footer-Secctioin */
 .footer-details{
@@ -141,23 +138,15 @@ a{
     font-size: 1em;
     color:#2d3c49;
   }
-  .project1,.project2{
-    width: 100%;
-    flex-direction: column;
-    margin:5px 0px 20px 0px;
-  }
-  .project-one-two{
-    width:100%;
-    flex-direction: column;
-
-  }
-  .project-three{
-    width: 100%;
-
-  }
-  .work-imagess,.work-images{
+  .work-images{
     width:100%;
   }
+  .project1,.project2,.project3{
+    width: 100%;
+    flex-direction: column;
+    margin:0px 0px 20px 0px;
+  }
+
 
 }
 
@@ -203,30 +192,15 @@ a{
     font-size: 1.3em;
     color:#2d3c49;
   }
-  .project1,.project2{
+  .work-images{
+    width:100%;
+  }
+  .project1,.project2,.project3{
     width: 100%;
     flex-direction: column;
     margin:0px 0px 20px 0px;
   }
-  .project-one-two{
-    display: flex;
-    margin:20px 0px 20px 0px;
-    width:100%;
-    flex-direction: column;
-  }
-  .project3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .project-three{
-    width:100%;
-    margin:20px 0px 20px 0px;
-  }
 
-  .work-imagess,.work-images{
-    width:100%;
-  }
 
 }
 
@@ -236,7 +210,6 @@ a{
     width:80%;
   }
   .logo{
-
     height: 80px;
     margin:30px 0px 0px 0px;
 
@@ -249,8 +222,7 @@ a{
   .head-caption{
     font-size: 1.5em;
   }
-
-    .middle-image{
+  .middle-image{
     display: flex;
     width:100%;
     margin: 20px auto;
@@ -264,42 +236,18 @@ a{
     margin:50px 0px 0px 0px;
 
   }
-  .project1{
-    margin:0px 5px 0px 0px;
-  }
-  .project2{
-    margin:0px 0px 0px 5px;
-  }
-  .project-one-two{
-    display: flex;
-    margin:20px 0px 20px 0px;
-    width:100%;
-    flex-direction: row;
+  .project1,.project2{
+    flex:1 49%;
   }
   .project3{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .project-three{
-    display: flex;
-    width:100%;
-    justify-content: center;
-    margin:20px 0px 20px 0px;
+    width:50%;
+    margin:0 auto;
   }
 
-  .work-images{
-    width:100%;
-  }
-  .work-imagess{
-    width:50%
-  }
-   .work-container{
-    display: flex;
-    flex-direction:column;
-    width:100%;
 
-  }
+
+
+
 
 }
 
